@@ -15,7 +15,7 @@ const ItemList = () => {
     });
 
     useEffect(() => {
-        fetch('/data.json')
+        fetch('https://suvankargiri7.github.io/contruction-web-app/data.json')
         .then(response => response.json())
         .then( data => setResponseData(data))
         .catch(error => console.error('There is something problem in fetch'))
